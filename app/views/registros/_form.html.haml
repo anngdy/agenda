@@ -1,0 +1,30 @@
+= form_for @registro do |f|
+  - if @registro.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@registro.errors.count, "error")} prohibited this registro from being saved:"
+      %ul
+        - @registro.errors.full_messages.each do |msg|
+          %li= msg
+
+  .form-group
+    = f.label :nome, '* NOME:', {class: 'col-sm-3 control-label'}
+    .col-md-9
+      = f.text_field :nome, {class: 'col-sm-3 control-label', id: 'nome'}
+
+    .form-group
+      = f.label :endereco, '* ENDEREÇO', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.text_field :endereco, {class: 'col-sm-3 control-label', id: 'endereco'}
+
+    .form-group
+      = f.label :date, '* ESCOLHA UMA DATA:', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.date_field :date, {class: 'col-sm-3 control-label', id: 'datepicker1', placeholder: 'dd/mm/aaaa'}
+
+    .form-group
+      = f.label :horario, '* ESCOLHA UM HORÁRIO:', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.time_select :horario, {class: 'col-sm-3 control-label', id: 'horario'}
+
+  .actions
+    = f.submit 'Save'

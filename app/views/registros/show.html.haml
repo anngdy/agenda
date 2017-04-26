@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @registro.nome
+%p
+  %b Endereço:
+  = @registro.endereco
+%p
+  %b Data:
+  = @registro.date
+%p
+  %b Horário:
+  = @registro.horario
+
+= link_to 'Edit', edit_registro_path(@registro)
+\|
+= link_to 'Back', registros_path

@@ -1,0 +1,174 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+  background-color: #f0f0f0;
+  font-family: monaco, Consolas, "Lucida Console", monospace ;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h2 { 
+  color: #2f2f2f; 
+  padding-bottom:30px; 
+  font-weight: normal; 
+  font-size: 24px;
+  text-transform: uppercase; 
+  font-family: monaco, Consolas, "Lucida Console", monospace; 
+}
+
+th {
+  color: #207b7b;
+  font-family: monaco, Consolas, "Lucida Console", monospace ;
+  font-size: 14px;
+  line-height: 18px;  
+}
+
+p, ol, ul, td {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 11px;
+  line-height: 18px;
+  color: #2f2f2f; 
+}
+
+a {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 16px;
+  color: #207b7b;
+
+  &:hover {
+    color: #8ab7b7;
+    background-color: #f0f0f0;
+  }
+}
+
+.btn-sm {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+
+  &:hover {
+    color: #207b7b;
+    background-color: #f0f0f0;
+  }
+}
+
+.waiting-modal {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: #2f2f2f;
+  font-size: 11px;
+  text-transform: uppercase;
+
+  .modal-title {
+    font-size: 20px;
+    color: #207b7b;	
+  }
+}
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}ess
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+.w {
+  width: 120px;
+}
+
+dl {
+  margin-bottom: 0px;
+}
+
+.dl-horizontal dt {
+  width: 118px;
+}
+
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.label {
+    text-shadow: 0px 0px 0px;
+    color: #58666E;
+    font-size: 100%;
+    font-weight: normal;
+    white-space: normal;
+}

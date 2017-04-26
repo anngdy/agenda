@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  endereco: MyText
+  date: 2017-04-26
+  horario: 2017-04-26 00:41:31
+
+two:
+  nome: MyString
+  endereco: MyText
+  date: 2017-04-26
+  horario: 2017-04-26 00:41:31

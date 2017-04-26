@@ -1,0 +1,27 @@
+%h1 Registros
+
+%table
+  %thead
+    %tr
+      %th Nome
+      %th Endereço
+      %th Data
+      %th Horario
+      %th
+      %th
+      %th
+
+  %tbody
+    - @registros.each do |registro|
+      %tr
+        %td= registro.nome
+        %td= registro.endereco
+        %td= registro.date
+        %td= registro.horario
+        %td= link_to 'Detalhes', registro
+        %td= link_to 'Editar', edit_registro_path(registro)
+        %td= link_to 'Deletar', registro, :method => :delete, :data => { :confirm => 'Tem certeza?' }
+
+%br
+
+= link_to 'New Registro', new_registro_path
